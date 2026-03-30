@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+      fetchpriority="high"
+    />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <load
+      src="partials/header.html"
+      icon-path="logo.svg"
+      highlight-act="active"
+    />
+
+    <section class="favorites">
+      <div class="container">
+        <h1 class="page-title">Favorites</h1>
+
+        <div class="favorites-wrapper">
+          <div class="motivation">
+            <div class="wrapper">
+              <article class="motivation-quote">
+                <div class="motivation-quote-icon-wrapper">
+                  <svg
+                    class="motivation-quote-icon"
+                    width="20"
+                    height="20"
+                    aria-hidden="true"
+                  >
+                    <use href="icon-pack/running-icon.svg"></use>
+                  </svg>
+                </div>
+
+                <div class="motivation-quote-content">
+                  <div class="motivation-quote-header">
+                    <h2 class="motivation-title">Quote of the day</h2>
+                    <div class="quotes-wrapper">
+                      <svg
+                        class="quotes"
+                        width="20"
+                        height="20"
+                        aria-hidden="true"
+                      >
+                        <use href="icon-pack/quotes.svg"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <blockquote class="motivation-text">
+                    A lot of times I find that people who are blessed with the
+                    most talent don't ever develop that attitude, and the ones
+                    who aren't blessed in that way are the most competitive and
+                    have the biggest heart.
+                  </blockquote>
+                  <cite class="motivation-author">Tom Brady</cite>
+                </div>
+              </article>
+
+              <div class="motivation-image-wrapper">
+                <img
+                  src="img/favorites-image/women-sportswear-working-out-outdoors.jpg"
+                  srcset="
+                    img/favorites-image/women-sportswear-working-out-outdoors@0.5x.jpg 0.5x,
+                    img/favorites-image/women-sportswear-working-out-outdoors.jpg      1x,
+                    img/favorites-image/women-sportswear-working-out-outdoors@2x.jpg   2x,
+                    img/favorites-image/women-sportswear-working-out-outdoors@3x.jpg   3x
+                  "
+                  alt="Women sportswear working out outdoors"
+                  class="motivation-image"
+                  loading="lazy"
+                />
+              </div>
+
+              <article class="motivation-fact">
+                <svg
+                  class="motivation-fact-icon"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                >
+                  <use href="icon-pack/dumbbell-icon.svg"></use>
+                </svg>
+
+                <div class="motivation-fact-container">
+                  <p class="recomended-duration">110 min</p>
+                  <h2 class="motivation-fact-title">Daily norm of sports</h2>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div id="main-content">
+            <div class="wrapper">
+              <ul class="favorite-exercises-list">
+                <li class="favorites-placeholder">
+                  It appears that you haven't added any exercises to your
+                  favorites yet. To get started, you can add exercises that you
+                  like to your favorites for easier access in the future.
+                </li>
+              </ul>
+
+              <div class="pagination">
+                <div class="pagination-back-wrapper">
+                  <button
+                    class="pagination-first-button"
+                    aria-label="First page"
+                  >
+                    <svg
+                      class="pagination-arrow back"
+                      aria-hidden="true"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="icon-pack/pagination-arrow.svg"></use>
+                    </svg>
+                    <svg
+                      class="pagination-arrow back"
+                      aria-hidden="true"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="icon-pack/pagination-arrow.svg"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="pagination-previous-button"
+                    aria-label="Previous page"
+                  >
+                    <svg
+                      class="pagination-arrow back"
+                      aria-hidden="true"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="icon-pack/pagination-arrow.svg"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="pagination-pages"></ul>
+                <div class="pagination-next-wrapper">
+                  <button class="pagination-next-button" aria-label="Next page">
+                    <svg
+                      class="pagination-arrow"
+                      aria-hidden="true"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="icon-pack/pagination-arrow.svg"></use>
+                    </svg>
+                  </button>
+                  <button class="pagination-last-button" aria-label="Last page">
+                    <svg
+                      class="pagination-arrow"
+                      aria-hidden="true"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="icon-pack/pagination-arrow.svg"></use>
+                    </svg>
+                    <svg
+                      class="pagination-arrow"
+                      aria-hidden="true"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="icon-pack/pagination-arrow.svg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <load src="partials/footer.html" icon-path="logo.svg" />
+
+    <load src="partials/modal.html" />
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

@@ -1,15 +1,56 @@
 <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer-wrapper">
+      <div class="footer-links">
+        <a class="footer-logo" href="index.html" aria-label="Site logo">
+          <svg
+            class="footer-logo-icon"
+            width="132"
+            height="14"
+            aria-hidden="true"
+          >
+            <use href="{=$icon-path}"></use>
+          </svg>
+        </a>
+        <load src="partials/socials.html" />
+      </div>
+
+      <article class="footer-main-content">
+        <h2 class="footer-title">
+          Transforming your <i>body</i> shape with us
+        </h2>
+
+        <div class="footer-subscription-form">
+          <h3 class="form-call-to-action">
+            Subscribe and learn about new exercises!
+          </h3>
+          <form class="subscription-form">
+            <label for="subscription-email" class="visually-hidden"
+              >Email for subscription</label
+            >
+            <input
+              type="email"
+              id="subscription-email"
+              class="subscription-input"
+              placeholder="Email"
+              required
+            />
+            <button type="submit" class="subscription-button">Send</button>
+          </form>
+        </div>
+      </article>
+    </div>
+
+    <div class="footer-copyright-container">
+      <p class="footer-copyright">Your Energy. All rights reserved.</p>
+      <div class="copyright-wrapper">
+        <div class="footer-copyright">
+          <a href="" class="footer-copyright-link">Privacy Policy</a>
+          <span class="footer-copyright-devider">/</span>
+          <a href="" class="footer-copyright-link">Terms of Service</a>
+        </div>
+        <p class="footer-copyright">&copy;2026</p>
+      </div>
+    </div>
   </div>
 </footer>

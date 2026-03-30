@@ -1,0 +1,668 @@
+.hero {
+  padding-top: 132px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero > .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-icon-wrapper {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-width: 50px;
+  max-width: 50px;
+  height: 40px;
+  overflow: visible;
+}
+
+.hero-icon {
+  transform: scale(0.66);
+  position: relative;
+  top: 5px;
+  left: -10px;
+  overflow: visible;
+}
+
+.hero-title {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+
+  margin-bottom: 20px;
+}
+
+.hero-subheading {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  object-fit: cover;
+  height: 460px;
+  object-position: 50% 20%;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.tags-image {
+  border-radius: 20px;
+  display: none;
+}
+
+.hero-tags-list {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  margin-top: 16px;
+}
+
+.hero-tags-item {
+  border: 1px solid #242424;
+  border-radius: 30px;
+  padding: 4px 11px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.main-heading-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-heading {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.category-heading {
+  display: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #24242450;
+}
+
+.main-order-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.exercises-nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.exercises-search {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border: 1px solid #242424;
+  padding: 12px 14px;
+  margin-top: 40px;
+  border-radius: 30px;
+
+  svg {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.exercises-search-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+
+  background: none;
+  border: none;
+  margin-right: auto;
+
+  &::placeholder {
+    color: #242424;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-delete-button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0 6px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.filter-tabs-list {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.filter-tabs-item {
+  padding-bottom: 8px;
+  padding: 8px 0;
+  position: relative;
+  border: none;
+  background: none;
+}
+
+.filter-tabs-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #242424;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.motivation {
+  order: 2;
+}
+
+.motivation > .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.motivation-quote-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f4f4f420;
+}
+
+.motivation-quote-icon {
+  filter: invert(100%) sepia(55%) saturate(1872%) hue-rotate(184deg)
+    brightness(121%) contrast(91%);
+}
+
+.motivation-quote {
+  width: 100%;
+  height: 209px;
+  display: flex;
+  gap: 15px;
+  background-color: #242424;
+  border-radius: 20px;
+  padding: 20px;
+
+  color: #f4f4f4;
+}
+
+.motivation-quote-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.motivation-quote-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.motivation-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 8px;
+}
+
+.quotes-wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+}
+
+.quotes {
+  transform: scale(0.9);
+}
+
+.motivation-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  overflow: hidden;
+
+  margin: 0;
+  color: #f4f4f460;
+}
+
+.motivation-author {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0px;
+  margin-top: 16px;
+}
+
+.motivation-image-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  max-width: 375px;
+  height: 242px;
+}
+
+.motivation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60%;
+}
+
+.motivation-fact {
+  width: 100%;
+  height: 209px;
+  display: flex;
+  gap: 15px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.motivation-fact-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #242424;
+}
+
+.motivation-fact-icon {
+  filter: invert(100%) sepia(55%) saturate(1872%) hue-rotate(184deg)
+    brightness(121%) contrast(91%);
+}
+
+.motivation-fact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.recomended-duration {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.motivation-fact-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+
+  color: #24242460;
+}
+
+.motivation-fact-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  margin-top: 16px;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  gap: 20px;
+}
+
+.loading-placeholder {
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 46px;
+}
+
+.filter-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  width: 100%;
+  max-width: 100%;
+  height: 225px;
+  overflow: hidden;
+  padding: 20px;
+
+  background-color: #11111170;
+  cursor: pointer;
+
+  border-radius: 12px;
+}
+
+.filter-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.filter-name {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.filter-category {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: #f4f4f440;
+}
+
+@media screen and (min-width: 768px) {
+  /* Hero */
+  .hero {
+    padding-top: 176px;
+  }
+
+  .hero-icon-wrapper {
+    margin-right: 20px;
+  }
+
+  .hero-icon {
+    transform: scale(1);
+    top: 50%;
+    left: 1%;
+  }
+
+  .hero-title {
+    font-size: 74px;
+    line-height: 74px;
+
+    max-width: 640px;
+  }
+
+  .hero-subheading {
+    font-size: 18px;
+    line-height: 24px;
+
+    max-width: 528px;
+    margin-bottom: 32px;
+  }
+
+  .hero-tags-list {
+    justify-content: end;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Main */
+  main {
+    padding-bottom: 100px;
+  }
+
+  .main-order-wrapper {
+    gap: 64px;
+  }
+
+  .main-heading {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .main-heading-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .category-heading {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: auto;
+  }
+
+  .filter-tabs-list {
+    margin: 0;
+    height: 48.39px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .exercises-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+
+  .exercises-search {
+    margin: 0;
+    width: 273px;
+  }
+
+  .content-list {
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 32px 15px;
+  }
+
+  .filter-tile {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+
+  /* Motivation */
+  .motivation > .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+  }
+
+  .motivation-quote {
+    max-width: 400px;
+    height: 249px;
+    padding: 40px;
+  }
+
+  .motivation-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .motivation-author {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .motivation-image-wrapper {
+    max-width: 288px;
+  }
+
+  .motivation-fact {
+    max-width: 400px;
+    height: 249px;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Hero */
+  .hero > .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+  }
+
+  .hero-text-container {
+    width: 640px;
+    order: 1;
+  }
+
+  .hero-image {
+    order: 3;
+    height: 350px;
+    object-position: 50% 30%;
+  }
+
+  .hero-subheading {
+    margin: 0;
+  }
+
+  .hero-additional-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    gap: 32px;
+    order: 2;
+    width: 200px;
+  }
+
+  .tags-image {
+    display: block;
+  }
+
+  .hero-tags-list {
+    max-width: 197px;
+    margin: 0;
+  }
+
+  /* Main */
+  .main-heading-wrapper {
+    margin-bottom: 0;
+  }
+
+  .exercises-navigation-wrapper {
+    margin-bottom: 32px;
+  }
+
+  main {
+    padding-bottom: 132px;
+  }
+
+  .exercises-navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .exercises-nav {
+    margin-bottom: 0;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .main-order-wrapper {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .exercises {
+    order: 2;
+  }
+
+  .filter-tile {
+    height: 242px;
+  }
+
+  /* Motivation */
+  .motivation {
+    order: 1;
+  }
+
+  .motivation > .wrapper {
+    width: 444px;
+  }
+
+  .content {
+    order: 2;
+  }
+
+  .motivation-quote {
+    max-width: 444px;
+    height: 242px;
+  }
+
+  .motivation-image-wrapper {
+    max-width: 444px;
+  }
+
+  .motivation-fact {
+    max-width: 444px;
+    height: auto;
+  }
+
+  .motivation-fact-text {
+    display: inline-block;
+  }
+}

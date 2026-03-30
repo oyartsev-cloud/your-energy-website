@@ -1,19 +1,60 @@
 <header class="header">
   <div class="container">
+    <a class="nav-logo" href="index.html" aria-label="Site logo">
+      <svg class="nav-logo-icon" width="132" height="14">
+        <use href="{=$icon-path}"></use>
+      </svg>
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <a class="nav-link" href="index.html" aria-current="page">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <a class="nav-link" href="favorites.html">Favourites</a>
         </li>
       </ul>
     </nav>
+
+    <div class="socials-wrapper">
+      <load src="partials/socials.html" />
+    </div>
+
+    <button
+      class="nav-toggle"
+      aria-label="Toggle navigation menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <svg class="menu-icon" width="32" height="32" aria-hidden="true">
+        <use href="icon-pack/burger-icon.svg"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu-backdrop">
+    <div class="mobile-menu-container" id="mobile-menu">
+      <div class="nav-button-wrapper">
+        <button class="nav-close" aria-label="Close navigation menu">
+          <svg class="close-icon" width="32" height="32" aria-hidden="true">
+            <use href="icon-pack/x.svg"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item active">
+          <a class="mobile-nav-link" href="index.html">Home</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="favorites.html" aria-current="page"
+            >Favourites</a
+          >
+        </li>
+      </ul>
+
+      <load src="partials/socials.html" />
+    </div>
   </div>
 </header>

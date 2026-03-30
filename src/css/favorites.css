@@ -1,0 +1,176 @@
+.favorites {
+  display: flex;
+  justify-content: center;
+  padding-top: 132px;
+  padding-bottom: 100px;
+
+  .favorites-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .page-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 20px;
+    color: #242424;
+  }
+
+  .motivation {
+    order: 1;
+  }
+
+  #main-content {
+    order: 2;
+  }
+
+  .motivation-quote {
+    height: auto;
+  }
+
+  .motivation-image-wrapper {
+    max-width: 100%;
+    width: 100%;
+    height: 119px;
+    order: 3;
+  }
+
+  .motivation-image {
+    object-position: 50% 0%;
+  }
+
+  .motivation-fact-icon {
+    filter: none;
+  }
+
+  .motivation-fact {
+    height: 119px;
+    flex-direction: column;
+  }
+
+  #main-content {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  #main-content > .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .favorites-placeholder {
+    font-size: 14px;
+    line-height: 18px;
+
+    text-align: center;
+    margin-bottom: 46px;
+    max-width: 318px;
+  }
+
+  .favorite-exercises-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .favorites {
+    padding-top: 176px;
+
+    .favorites-wrapper {
+      gap: 54px;
+    }
+
+    .motivation > .wrapper {
+      gap: 16px;
+    }
+
+    .page-title {
+      font-size: 44px;
+      line-height: 48px;
+      margin-bottom: 32px;
+    }
+
+    .motivation-quote {
+      width: 100%;
+      max-width: 704px;
+      height: 220px;
+    }
+
+    .motivation-fact {
+      padding: 20px;
+      max-width: 344px;
+    }
+
+    .motivation-image-wrapper {
+      max-width: 344px;
+      width: 344px;
+    }
+
+    .favorites-placeholder {
+      font-size: 18px;
+      line-height: 24px;
+
+      max-width: 554px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      padding: 30px 0;
+    }
+
+    .favorite-exercises-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: start;
+      gap: 32px 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .favorites {
+    .motivation > .wrapper {
+      order: 1;
+      width: 494px;
+    }
+
+    #main-content {
+      order: 2;
+      margin-top: 0;
+
+      height: 487px;
+      overflow-y: scroll;
+      scrollbar-color: #242424 transparent;
+    }
+
+    .favorites-wrapper {
+      flex-direction: row;
+      gap: 32px;
+    }
+
+    .motivation-fact {
+      max-width: 239px;
+    }
+
+    .motivation-image-wrapper {
+      width: 239px;
+    }
+
+    .favorite-exercises-list {
+      max-width: 826px;
+      min-width: 826px;
+    }
+
+    .favorites-placeholder {
+      margin-top: 84px;
+    }
+  }
+}
